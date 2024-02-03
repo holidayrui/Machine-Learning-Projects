@@ -42,13 +42,6 @@ class Mode(nn.Module):
         return x
 
 
-if __name__ == '__main__':
-    mode = Mode()
-    input = torch.ones((64, 3, 32, 32))
-    output = mode(input)
-    print(output.shape)
-
-
 # Construct the neural network
 mode = Mode()
 if torch.cuda.is_available():
